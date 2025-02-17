@@ -1,0 +1,271 @@
+/* Általános beállítások */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+img {
+    height: 220px;
+ }
+
+/* Fejléc */
+header {
+    background: url('f1_logo.png') no-repeat center center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff; /* Forma-1 piros */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.2em;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Navigációs menü */
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: #222;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #ff1e00;
+}
+
+/* Szekciók */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #1e1e1e;
+    border-radius: 10px;
+}
+
+/* Táblázatok */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ff1e00;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #ff1e00;
+    color: white;
+}
+
+/* Pilóta kártyák */
+
+#drivers {
+    text-align: center;
+    padding: 30px;
+    background-color: #222; /* Sötétszürke háttér */
+    color: #fff;
+}
+
+.driver-card, .driver-card-2, .driver-card-3 {
+    display: inline-block;
+    width: 280px;
+    background: #333;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(255, 0, 0, 0.5); /* Piros árnyék */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.driver-card img, .driver-card-2 img, .driver-card-3 img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.driver-card h3, .driver-card-2 h3, .driver-card-3 h3 {
+    font-family: 'Orbitron', sans-serif; /* Forma-1-es futurisztikus betűtípus */
+    font-size: 1.4em;
+    color: #ffcc00; /* Arany szín */
+    margin-bottom: 10px;
+}
+
+.driver-card p, .driver-card-2 p, .driver-card-3 p {
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+}
+
+.driver-card:hover, .driver-card-2:hover, .driver-card-3:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(255, 0, 0, 0.8); /* Erősebb piros árnyék hover állapotban */
+}
+
+
+.image-container {
+    background: url('wallpaper.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between; /* Képek széthúzása a szélekre */
+    align-items: center; /* Függőleges középre igazítás */
+    width: 90%; /* A teljes szélességet elfoglalja */
+    padding: 20px; /* Kis térköz a szélektől */
+}
+
+.left-image, .right-image {
+    width: 40%; /* A képek szélessége */
+    max-width: 400px; /* Maximális szélesség */
+    height: auto; /* Megőrzi az arányokat */
+    border-radius: 50px; /* Lekerekített sarkok (opcionális) */
+    padding: 20px;
+}
+
+
+/* Gombok */
+#scrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff0000; /* F1 piros */
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    display: none; /* Alapból rejtve */
+}
+
+#scrollTop:hover {
+    background: #cc0000; /* Sötétebb piros */
+    box-shadow: 0px 6px 15px rgba(255, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+
+#scrollTop:active {
+    transform: scale(1);
+}
+
+
+/* Lábléc */
+footer {
+    background-color: #111; /* Sötét háttér */
+    color: #fff; /* Fehér szöveg */
+    text-align: center;
+    padding: 15px;
+    font-family: 'Orbitron', sans-serif; /* Futurisztikus, versenyhangulatú betűtípus */
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    border-top: 2px solid #ff0000; /* Piros csík a tetején */
+}
+
+footer a {
+    color: #ffcc00; /* Arany szín a linkhez */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff0000; /* Piros szín hover állapotban */
+    text-decoration: underline;
+}
+
+
+.record-list {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.4em;
+    color: #ffcc00; /* Aranyszínű kiemelés */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(to right, #000000, #222222);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid red;
+    max-width: 600px;
+    margin: auto;
+}
+
+.record-list li {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.record-list li:last-child {
+    border-bottom: none;
+}
+
+.team-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2em;
+    text-align: left;
+    margin: 20px 0;
+    background-color: #222; /* Sötét háttér */
+    color: #fff; /* Fehér szöveg */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.team-table th, .team-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.team-table th {
+    background-color: #ff0000; /* F1 stílusú piros fejléc */
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1); /* Váltakozó sorok */
+}
+
+.team-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Kiemelés, ha ráhúzod az egeret */
+    transition: 0.3s;
+}
